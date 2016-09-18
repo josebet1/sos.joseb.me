@@ -1,0 +1,156 @@
+@font-face {
+    font-family: av-ultralight;
+	src: url("../fonts/AvenirNext-UltraLight.ttf") format("opentype");
+}
+@font-face {
+    font-family: av-regular;
+	src: url("../fonts/AvenirNext-Regular.ttf") format("opentype"); 
+}
+@font-face {
+    font-family: av-demibold;
+    src: url("../fonts/AvenirNext-DemiBold.ttf") format("opentype");
+}
+@font-face {
+    font-family: av-ultralight-italic;
+    src: url("../fonts/AvenirNext-UltraLightItalic.ttf") format("opentype");
+}
+@font-face
+{
+    font-family: av-regular-italic;
+    src: url("../fonts/AvenirNext-Italic.ttf") format("opentype");
+}
+
+html, body{height:100%; margin:0;padding:0;-webkit-font-smoothing:antialiased;}
+
+body
+{
+	background-color: #7f8c8d;
+
+
+}
+.video-overlay
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background: transparent url('https://d2chfjgjz40wdu.cloudfront.net/static/images/grid.png') repeat;
+	background-color: black;
+}
+
+#big-video-wrap
+{
+	z-index: -4;
+}
+
+.container-fluid{
+	z-index: 1031;
+	height:100%;
+	display:table;
+	width: 100%;
+  	padding: 0;
+
+}
+
+#main-text
+{
+	z-index: 1035;
+}
+
+
+.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+
+.center {
+  float:none;
+  margin:0 auto;
+}
+.navbar
+{
+	z-index: 1100;
+}
+body > .navbar-collapse
+{
+	z-index: 9900;
+}
+
+.ultralight
+{
+	font-family: av-ultralight;
+	color: #ffffff;
+}
+.regular
+{
+	font-family: av-regular;
+	color: #ffffff;
+}
+.bold
+{
+	font-family: av-demibold;
+	color: #ffffff;
+}
+.ultralight-italic
+{
+	font-family: av-ultralight-italic;
+	color: #ffffff;
+}
+.main-h1
+{
+	font-family: 'Raleway', sans-serif;
+	color: #EEE;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+	font-size: 54px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+.bottom-text
+{
+	font-size: 25px;
+}
+.form-control::-webkit-input-placeholder { color: #7f8c8d; }
+.form-control:-moz-placeholder { color: #7f8c8d; }
+.form-control::-moz-placeholder { color: #7e8b8c; }
+.form-control:-ms-input-placeholder { color: #7f8c8d; }
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.navbar .divider-vertical {
+height: 95px;
+margin-top: -15px;
+border-right: 1px solid #EEE;
+
+}
+
+.navbar-inverse .divider-vertical {
+border-right: 1px solid #EEE;
+}
+
+@media (max-width: 767px) {
+.navbar-collapse .nav > .divider-vertical {
+    display: none;
+  }
+}
+
+
